@@ -1,0 +1,397 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* HEADER */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:55px;
+}
+
+.logo-text h1{
+    font-size:22px;
+    color:#1b5e20;
+}
+
+.logo-text p{
+    font-size:12px;
+    color:#666;
+}
+
+.navbar{
+    display:flex;
+    gap:30px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+
+.navbar a:hover{
+    color:#1b5e20;
+}
+
+.nav-buttons a{
+    padding:10px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.login-btn{
+    background:#1b5e20;
+    color:#fff;
+}
+
+.register-btn{
+    border:2px solid #1b5e20;
+    color:#1b5e20;
+}
+
+/* HERO */
+.hero{
+    min-height:85vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+.hero-buttons{
+    margin-top:20px;
+}
+
+.hero-buttons button{
+    padding:12px 25px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.hero-buttons .outline{
+    background:transparent;
+    border:2px solid white;
+    color:white;
+}
+
+/* FEATURES */
+.features{
+    padding:60px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    width:280px;
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* GALLERY */
+.gallery{
+    padding:60px;
+    text-align:center;
+}
+
+.gallery-box{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.gallery-box img{
+    width:300px;
+    border-radius:12px;
+}
+
+/* STATS */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:60px;
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    width:200px;
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1b5e20;
+    color:white;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .cards,.stats,.gallery-box{
+        flex-direction:column;
+        align-items:center;
+    }}
+    /* ===== LOGIN PAGE ===== */
+
+.login-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#e8f5e9,#c8e6c9);
+    padding:30px;
+}
+
+.login-card{
+    width:420px;
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+.login-card h1{
+    color:#1b5e20;
+    margin-bottom:10px;
+}
+
+.login-card p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.input-box{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.input-box input{
+    width:100%;
+    padding:14px 45px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.login-btn{
+    width:100%;
+    padding:14px;
+    background:#2e7d32;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+/* ===== REGISTER PAGE ===== */
+
+.login-card select{
+    width:100%;
+    padding:14px 45px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+    background:#fff;
+    color:#333;
+    appearance:none;
+}
+
+.login-card select:focus{
+    border-color:#2e7d32;
+    box-shadow:0 0 8px rgba(46,125,50,.2);
+}
+
+.login-card h2{
+    color:#1b5e20;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.login-card form{
+    margin-top:20px;
+}
+/* ===== DONATE FOOD ===== */
+
+input[type="file"]{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    background:#fff;
+}
+
+input[type="datetime-local"]{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+}
+
+label{
+    font-weight:600;
+    color:#1b5e20;
+}
+/* ===== DONATE FOOD PAGE ===== */
+
+input[type="datetime-local"],
+input[type="file"]{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+    background:#fff;
+    margin-top:8px;
+}
+
+label{
+    display:block;
+    text-align:left;
+    margin-bottom:6px;
+    color:#1b5e20;
+    font-weight:600;
+}/* ===== DONATE PAGE CARD ===== */
+
+.login-card{
+    max-width:500px;
+}
+
+.login-card form{
+    text-align:left;
+}
+
+.login-btn{
+    margin-top:15px;
+}
+
+.home-link{
+    display:block;
+    text-align:center;
+    margin-top:20px;
+}
+/* ===== NGO DASHBOARD ===== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+table th{
+    background:#2e7d32;
+    color:#fff;
+    padding:14px;
+    text-align:center;
+}
+
+table td{
+    padding:14px;
+    border-bottom:1px solid #eee;
+    text-align:center;
+}
+
+table tr:hover{
+    background:#f5f5f5;
+}
+
+table button{
+    padding:8px 18px;
+    border:none;
+    border-radius:8px;
+    background:#2e7d32;
+    color:#fff;
+    cursor:pointer;
+}
+
+table button:hover{
+    background:#1b5e20;
+}/* ===== DASHBOARD BUTTONS ===== */
+
+.login-card a{
+    text-decoration:none;
+}
+
+.login-card .login-btn{
+    width:100%;
+    margin:8px 0;
+}
+
+.login-card p{
+    margin-bottom:15px;
+}
