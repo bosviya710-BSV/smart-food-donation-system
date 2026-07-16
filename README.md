@@ -1,4 +1,4 @@
-# smart-food-donation-system
+
 # Smart Food Donation System
 
 ## Project Description
